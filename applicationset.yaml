@@ -25,7 +25,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/BBrucelee2002/argocd-appset-demo.git
+        repoURL: https://github.com/BBrucelee2002/argocd-appset-1.git
         targetRevision: HEAD
         path: '{{path}}'
       destination:
