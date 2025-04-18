@@ -5,20 +5,20 @@ metadata:
   namespace: argocd
 spec:
   generators:
-  - list:
-      elements:
-      - name: dev
-        namespace: web-dev
-        cluster: in-cluster
-        path: overlays/dev
-      - name: staging
-        namespace: web-staging
-        cluster: in-cluster
-        path: overlays/staging
-      - name: prod
-        namespace: web-prod
-        cluster: in-cluster
-        path: overlays/prod
+    - list:
+        elements:
+          - name: dev
+            namespace: microservice-dev
+            cluster: https://kubernetes.default.svc
+            path: overlays/dev
+          - name: staging
+            namespace: microservice-staging
+            cluster: https://kubernetes.default.svc
+            path: overlays/staging
+          - name: prod
+            namespace: microservice-prod
+            cluster: https://kubernetes.default.svc
+            path: overlays/prod
   template:
     metadata:
       name: 'web-app-{{name}}'
