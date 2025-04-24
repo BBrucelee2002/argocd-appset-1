@@ -13,4 +13,4 @@ patchesStrategicMerge:
     metadata:
       name: simple-web-app
     spec:
-      replicas: 3
+      replicas: 1
